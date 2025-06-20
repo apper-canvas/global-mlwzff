@@ -1,4 +1,5 @@
-import { format, parseISO, getYear, getMonth } from 'date-fns';
+import { format, getMonth, getYear, parseISO } from "date-fns";
+import React from "react";
 
 // Initialize localStorage with mock data if empty
 const initializeEmployees = () => {
@@ -124,11 +125,6 @@ export const deleteEmployee = (id) => {
 };
 
 // Analytics and Reports
-
-// Get department distribution
-};
-
-// Get employee status breakdown
 export const getStatusBreakdown = () => {
   const employees = getEmployees();
   const statusCount = {};
